@@ -6,15 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Establecer la visibilidad inicial al cargar la página
-  const isBusinessMode = switchButton
-    .querySelector("input")
-    .hasAttribute("checked");
-
-  toggleSectionsVisibility(isBusinessMode);
+  let isBusinessMode = false;
 
   // Agregar un listener al botón de alternancia para controlar la visibilidad
   switchButton.addEventListener("change", function () {
-    const isBusinessMode = this.checked;
+    isBusinessMode = !isBusinessMode; // Cambiar el modo cada vez que se interactúe con el botón
     toggleSectionsVisibility(isBusinessMode);
   });
 
@@ -34,4 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById(sectionId).classList.add("hide");
     });
   }
+
+  // Llamar a toggleSectionsVisibility para asegurarse de que las secciones estén ocultas al cargar la página
+  toggleSectionsVisibility(isBusinessMode);
 });
