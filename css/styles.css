@@ -65,9 +65,11 @@
     font-size: 14px;
     line-height: 19.6px;
   }
+  .bold {
+    font-weight: bold;
+  }
 }
 
-/* Estilos para mantener fijo el header */
 header {
   display: flex;
   justify-content: space-between;
@@ -77,26 +79,49 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  color: #000000;
+  background-color: var(--color-secondary);
+  color: var(--color-black-3);
   padding: 10px;
   z-index: 1000;
+}
+
+body {
+  font-family: "Urbanist";
+}
+
+#logo img {
+  height: 50px;
+  width: auto;
 }
 
 nav {
   display: flex;
   align-items: center;
-  margin-right: 20px; /* Añadir espacio a la derecha del encabezado */
+  margin-right: 20px;
 }
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  margin-top: 2px;
 }
 
 nav ul li {
   margin-left: 20px;
+  transition: color 0.3s ease;
+}
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+  color: var(--color-gray-5);
+  border-bottom-color: var(--color-gray-4);
 }
 
 nav ul li:first-child {
@@ -104,7 +129,44 @@ nav ul li:first-child {
 }
 
 #extraButton {
-  margin-left: auto; /* El botón se colocará a la derecha del todo */
+  margin-left: auto;
+  margin-right: 40px;
+  background: var(--color-white);
+  border-color: var(--color-primary);
+  border-width: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: var(--color-primary);
+  transition: background-color 0.3s ease;
+}
+.download-button {
+  margin-left: auto;
+  margin-right: 20px;
+  background: var(--color-gray-5);
+  border: var(--color-secondary);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 15px 30px; /* Aumentar el padding */
+  color: #ffffff;
+  border-radius: 50px; /* Gran borde redondeado */
+  border: 3px solid transparent; /* Borde transparente */
+  transition: background-color 0.4s, border-color 0.4s; /* Transiciones para el color de fondo y el color del borde */
+}
+
+/* Estilo para cuando el botón está activo */
+#extraButton:active {
+  transform: translateY(2px); /* Efecto de presionado */
+}
+
+/* Estilo para el botón cuando el mouse está sobre él */
+#extraButton:focus {
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Estilo para el botón cuando está deshabilitado */
+#extraButton:disabled {
+  opacity: 0.5; /* Reducir la opacidad */
+  cursor: not-allowed; /* Cambiar el cursor */
 }
 
 section.show {
@@ -115,19 +177,64 @@ section.hide {
   display: none;
 }
 
-/* Estilos para el toggle button */
 .switch {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 60px;
   height: 34px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.header-section {
+  padding: 0 10px;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch-label-left {
+  color: var(--color-tertiary);
+  transition: transform 0.3s ease;
+  margin-left: 16px;
+  margin-right: 8px;
+  text-shadow: -1px -1px 0 var(--color-gray-2), 1px -1px 0 var(--color-gray-2),
+    -1px 1px 0 var(--color-gray-2), 1px 1px 0 var(--color-gray-2);
+}
+
+.switch-label-right {
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+  margin-right: 16px;
+  text-shadow: -1px -1px 0 var(--color-gray-4), 1px -1px 0 var(--color-gray-4),
+    -1px 1px 0 var(--color-gray-4), 1px 1px 0 var(--color-gray-4);
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+#language-selector {
+  font-family: var(--font-family);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-black-2);
+}
+
+.language-button:hover {
+  background-color: #333;
+  color: #ffffff;
 }
 
 /* El slider */
@@ -138,7 +245,7 @@ section.hide {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--color-tertiary);
   transition: 0.4s;
   border-radius: 34px; /* Redondear el slider */
 }
@@ -150,28 +257,16 @@ section.hide {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--color-white);
   transition: 0.4s;
   border-radius: 50%; /* Redondear el círculo interior */
 }
 
 /* Cuando el toggle está activado */
 input:checked + .slider {
-  background-color: #2196f3; /* Cambiar el color de fondo */
+  background-color: var(--color-primary); /* Cambiar el color de fondo */
 }
 
 input:checked + .slider:before {
   transform: translateX(26px); /* Mover el círculo interior */
 }
-
-/* Estilo para el encabezado fijo */
-#mainHeader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; /* Ajusta el color de fondo según tu diseño */
-  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
-}
-
-/* Estilos adicionales según sea necesario */
