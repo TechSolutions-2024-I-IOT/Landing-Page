@@ -1,0 +1,177 @@
+:root {
+  /* Colors */
+  --color-primary: #556bda;
+  --color-secondary: #97a1d7;
+  --color-tertiary: #ffa45a;
+
+  --color-info: #2f80ed;
+  --color-success: #27ae60;
+  --color-warning: #e2b93b;
+  --color-error: #990000;
+
+  --color-black-1: #000000;
+  --color-black-2: #1d1d1d;
+  --color-black-3: #282828;
+  --color-white: #ffffff;
+
+  --color-gray-1: #333333;
+  --color-gray-2: #4f4f4f;
+  --color-gray-3: #828282;
+  --color-gray-4: #bdbdbd;
+  --color-gray-5: #e0e0e0;
+
+  /*Font*/
+  --font-family: "Urbanist", sans-serif;
+
+  /*Size and style*/
+  h1 {
+    font-size: 56px;
+    line-height: 61.6px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+  h3 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  h4 {
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+  h6 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .large-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .medium-text {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+  .normal-text {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  .small-text {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+}
+
+/* Estilos para mantener fijo el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #000000;
+  padding: 10px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Añadir espacio a la derecha del encabezado */
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+#extraButton {
+  margin-left: auto; /* El botón se colocará a la derecha del todo */
+}
+
+section.show {
+  display: block;
+}
+
+section.hide {
+  display: none;
+}
+
+/* Estilos para el toggle button */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* El slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px; /* Redondear el slider */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%; /* Redondear el círculo interior */
+}
+
+/* Cuando el toggle está activado */
+input:checked + .slider {
+  background-color: #2196f3; /* Cambiar el color de fondo */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Mover el círculo interior */
+}
+
+/* Estilo para el encabezado fijo */
+#mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Ajusta el color de fondo según tu diseño */
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/* Estilos adicionales según sea necesario */
