@@ -80,7 +80,7 @@ header {
   left: 0;
   width: 100%;
   background-color: var(--color-secondary);
-  color: #000000;
+  color: var(--color-black-3);
   padding: 10px;
   z-index: 1000;
 }
@@ -105,11 +105,11 @@ nav ul {
   padding: 0;
   display: flex;
   margin-top: 2px;
-  /* gap: 20px; */
 }
 
 nav ul li {
   margin-left: 20px;
+  transition: color 0.3s ease;
 }
 nav ul li a {
   text-decoration: none;
@@ -130,12 +130,43 @@ nav ul li:first-child {
 
 #extraButton {
   margin-left: auto;
-  margin-right: 20px;
-  background: none;
-  border: none;
+  margin-right: 40px;
+  background: var(--color-white);
+  border-color: var(--color-primary);
+  border-width: 4px;
   cursor: pointer;
-  font-size: 16px;
+  padding: 10px 20px;
+  color: var(--color-primary);
+  transition: background-color 0.3s ease;
+}
+.download-button {
+  margin-left: auto;
+  margin-right: 20px;
+  background: var(--color-gray-5);
+  border: var(--color-secondary);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 15px 30px; /* Aumentar el padding */
   color: #ffffff;
+  border-radius: 50px; /* Gran borde redondeado */
+  border: 3px solid transparent; /* Borde transparente */
+  transition: background-color 0.4s, border-color 0.4s; /* Transiciones para el color de fondo y el color del borde */
+}
+
+/* Estilo para cuando el botón está activo */
+#extraButton:active {
+  transform: translateY(2px); /* Efecto de presionado */
+}
+
+/* Estilo para el botón cuando el mouse está sobre él */
+#extraButton:focus {
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Estilo para el botón cuando está deshabilitado */
+#extraButton:disabled {
+  opacity: 0.5; /* Reducir la opacidad */
+  cursor: not-allowed; /* Cambiar el cursor */
 }
 
 section.show {
@@ -176,6 +207,8 @@ section.hide {
   transition: transform 0.3s ease;
   margin-left: 16px;
   margin-right: 8px;
+  text-shadow: -1px -1px 0 var(--color-gray-2), 1px -1px 0 var(--color-gray-2),
+    -1px 1px 0 var(--color-gray-2), 1px 1px 0 var(--color-gray-2);
 }
 
 .switch-label-right {
@@ -183,48 +216,25 @@ section.hide {
   transition: transform 0.3s ease;
   margin-left: 8px;
   margin-right: 16px;
-}
-
-.switch-label-left:hover,
-.switch-label-right:hover {
-  transform: scale(1.05);
-  font-weight: bold;
+  text-shadow: -1px -1px 0 var(--color-gray-4), 1px -1px 0 var(--color-gray-4),
+    -1px 1px 0 var(--color-gray-4), 1px 1px 0 var(--color-gray-4);
 }
 
 .language-dropdown {
   position: relative;
 }
 
-.language-button {
+#language-selector {
+  font-family: var(--font-family);
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
-  color: #ffffff;
+  color: var(--color-black-2);
 }
 
-.language-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.language-button:hover {
   background-color: #333;
-}
-
-.language-menu li {
-  padding: 5px 10px;
-}
-
-.language-option {
   color: #ffffff;
-  text-decoration: none;
-}
-
-.language-option:hover {
-  text-decoration: underline;
 }
 
 /* El slider */

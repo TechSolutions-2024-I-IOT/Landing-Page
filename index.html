@@ -26,34 +26,27 @@
         <span class="switch-label-right medium-text bold">Pasajeros</span>
       </div>
 
-      <nav class="header-section">
+      <nav class="header-section medium-text">
         <!-- Enlaces a la derecha -->
         <ul>
           <li><a href="#questions">¿Dudas?</a></li>
           <li><a href="#our-team">Nosotros</a></li>
           <li><a href="#FAQ">FAQ</a></li>
-          <!-- Botón de traducción que es el logo -->
-          <!-- <li id="languageSwitch">
-            <a href="#"><img src="ruta/al/logo.png" alt="Idioma" /></a>
-          </li> -->
           <li id="languageSwitch">
             <div class="language-dropdown">
-              <button class="language-button">🌐 EN</button>
-              <ul class="language-menu">
-                <li>
-                  <a href="#" class="language-option" data-lang="en">EN</a>
-                </li>
-                <li>
-                  <a href="#" class="language-option" data-lang="es">ES</a>
-                </li>
-              </ul>
+              <select id="language-selector" class="medium-text">
+                <option value="es_419">🌐ES</option>
+                <option value="en_US">🌐EN</option>
+              </select>
             </div>
           </li>
         </ul>
       </nav>
 
       <div class="header-section">
-        <button id="extraButton">Download</button>
+        <button id="extraButton" class="download-button large-text bold">
+          Download
+        </button>
       </div>
     </header>
 
