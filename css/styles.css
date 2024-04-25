@@ -69,6 +69,45 @@
     font-weight: bold;
   }
 }
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+.color-info {
+  color: var(--color-info);
+}
+.color-success {
+  color: var(--color-success);
+}
+.color-warning {
+  color: var(--color-warning);
+}
+.color-error {
+  color: var(--color-error);
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-gray-1 {
+  color: var(--color-gray-1);
+}
+.color-gray-2 {
+  color: var(--color-gray-2);
+}
+.color-gray-3 {
+  color: var(--color-gray-3);
+}
+.color-gray-4 {
+  color: var(--color-gray-4);
+}
+.color-gray-5 {
+  color: var(--color-gray-5);
+}
 
 header {
   display: flex;
@@ -137,36 +176,27 @@ nav ul li:first-child {
   cursor: pointer;
   padding: 10px 20px;
   color: var(--color-primary);
+  font-family: var(--font-family);
   transition: background-color 0.3s ease;
 }
 .download-button {
-  margin-left: auto;
-  margin-right: 20px;
-  background: var(--color-gray-5);
-  border: var(--color-secondary);
   cursor: pointer;
-  font-size: 24px;
-  padding: 15px 30px; /* Aumentar el padding */
-  color: #ffffff;
-  border-radius: 50px; /* Gran borde redondeado */
-  border: 3px solid transparent; /* Borde transparente */
-  transition: background-color 0.4s, border-color 0.4s; /* Transiciones para el color de fondo y el color del borde */
+  border-radius: 50px;
+  border: 3px solid transparent;
+  transition: background-color 0.4s, border-color 0.4s;
 }
 
-/* Estilo para cuando el botón está activo */
 #extraButton:active {
-  transform: translateY(2px); /* Efecto de presionado */
+  transform: translateY(2px);
 }
 
-/* Estilo para el botón cuando el mouse está sobre él */
 #extraButton:focus {
-  outline: none; /* Eliminar el contorno predeterminado */
+  outline: none;
 }
 
-/* Estilo para el botón cuando está deshabilitado */
 #extraButton:disabled {
-  opacity: 0.5; /* Reducir la opacidad */
-  cursor: not-allowed; /* Cambiar el cursor */
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 section.show {
@@ -237,7 +267,6 @@ section.hide {
   color: #ffffff;
 }
 
-/* El slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -247,7 +276,7 @@ section.hide {
   bottom: 0;
   background-color: var(--color-tertiary);
   transition: 0.4s;
-  border-radius: 34px; /* Redondear el slider */
+  border-radius: 34px;
 }
 
 .slider:before {
@@ -269,4 +298,58 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px); /* Mover el círculo interior */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  margin-top: 30px;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-image {
+  width: 50%;
+  height: 400px;
+  background-color: var(--color-gray-5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#heroButton-primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  border-width: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  transition: background-color 0.3s ease;
+}
+
+#heroButton-tertiary {
+  background: var(--color-tertiary);
+  border-color: var(--color-tertiary);
+  border-width: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  transition: background-color 0.3s ease;
 }
