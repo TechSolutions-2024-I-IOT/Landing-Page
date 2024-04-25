@@ -353,3 +353,67 @@ input:checked + .slider:before {
   font-family: var(--font-family);
   transition: background-color 0.3s ease;
 }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-secondary);
+  height: 650px;
+}
+
+.features h1 {
+  margin-bottom: 20px;
+}
+
+.feature-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.phones {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  position: relative;
+  height: 300px;
+}
+
+.phone {
+  width: 30%;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.phone-left {
+  left: 10%; /* Posiciona la imagen izquierda al inicio */
+  z-index: 1; /* Establece el índice z para que esté detrás de la imagen central */
+}
+
+.phone-center {
+  left: 35%; /* Posiciona la imagen central un poco a la derecha */
+  top: 50%;
+  z-index: 2; /* Establece el índice z para que esté encima de las otras imágenes */
+}
+
+.phone-right {
+  right: 10%; /* Posiciona la imagen derecha al final */
+  z-index: 1; /* Establece el índice z para que esté detrás de la imagen central */
+}
+.feature-list {
+  width: 45%;
+  list-style: none;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+.feature-list li::before {
+  content: "\2713"; /* Código Unicode para el icono de check */
+  color: green; /* Cambia este color según tu diseño */
+  margin-right: 10px;
+}
