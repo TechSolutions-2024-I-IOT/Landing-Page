@@ -231,8 +231,47 @@
       </section>
 
       <section id="questions">
-        <!-- Contenido del formulario de preguntas -->
-        <h2>¿Tiene alguna pregunta?</h2>
+        <h2>
+          ¿Tienes preguntas?<br />
+          ¡Estamos aquí para ayudarte!
+        </h2>
+        <p class="color-gray-3">
+          Antes de todo, le invitamos a revisar nuestras preguntas frecuentes
+          (FAQ) por si su duda esta resuelta. Si no, por favor, no dude en
+          ponerte en contacto con nosotros.
+        </p>
+        <form action="/submit-question" method="post">
+          <label for="name">Nombre completo:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="30"
+            required
+          /><br />
+          <label for="email">Correo:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="50"
+            required
+          /><br />
+          <label for="category">Categoría:</label><br />
+          <select id="category" name="category" style="font-family: Urbanist">
+            <option value="passenger" selected>Pasajero</option>
+            <option value="business">Empresa</option></select
+          ><br />
+          <label for="message">Mensaje:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            maxlength="300"
+            required
+          ></textarea
+          ><br />
+          <input type="submit" value="Enviar" />
+        </form>
       </section>
 
       <section id="our-team">

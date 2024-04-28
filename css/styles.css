@@ -671,3 +671,28 @@ footer {
   border: 1px solid var(--color-secondary);
   border-radius: 10px;
 }
+
+#questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#questions form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%; /* Ajusta esto según tus necesidades */
+}
+
+#questions input[type="text"],
+#questions input[type="email"],
+#questions select,
+#questions textarea {
+  width: 100%;
+  margin: 10px 0; /* Añade margen arriba y abajo */
+  padding: 10px;
+  border: 2px solid #556bda; /* Añade un borde de color */
+  border-radius: 10px; /* Añade bordes redondeados */
+}
