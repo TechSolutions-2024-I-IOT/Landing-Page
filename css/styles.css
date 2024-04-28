@@ -470,3 +470,52 @@ input:checked + .slider:before {
 .card-content h6 {
   margin: 10px;
 }
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 20px 0;
+}
+
+.video .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.video .video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video .info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.video .info p {
+  margin: 10px 0;
+}
+
+.video .buttons {
+  display: flex;
+  justify-content: flex-start; /* Alineación de los botones a la izquierda */
+}
+
+.video .buttons a {
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+.video img {
+  max-width: 150px; /* Ancho máximo de las imágenes de los botones */
+  height: auto;
+}
