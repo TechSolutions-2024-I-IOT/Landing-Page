@@ -1,3 +1,18 @@
+function toggleCard(cardNumber) {
+  var content = document.getElementById("content" + cardNumber);
+  var icon = document.getElementById("icon" + cardNumber);
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    icon.textContent = "-";
+    localStorage.setItem("card" + cardNumber, "open");
+  } else {
+    content.style.display = "none";
+    icon.textContent = "+";
+    localStorage.setItem("card" + cardNumber, "closed");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const switchButton = document.getElementById("switchButton");
   const sections = {
@@ -36,14 +51,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   // Función para cambiar el color del botón de descarga
-  function updateDownloadButtonColor(isBusinessMode) {
-    const downloadButton = document.getElementById("extraButton");
-    const color = isBusinessMode ? colors.tertiary : colors.primary;
-    downloadButton.style.transition = "color 0.3s ease";
-    downloadButton.style.color = color;
-    downloadButton.style.borderColor = color;
-  }
+  // for (let i = 1; i <= 3; i++) {
+  //   document
+  //     .getElementById("header" + i)
+  //     .addEventListener("click", function () {
+  //       toggleCard(i);
+  //     });
 
+  //   // Restaurar el estado de las tarjetas al cargar la página
+  //   var state = localStorage.getItem("card" + i);
+  //   if (state === "open") {
+  //     document.getElementById("content" + i).style.display = "block";
+  //     document.getElementById("icon" + i).textContent = "-";
+  //   }
+  // }
   // Llamar a toggleSectionsVisibility para asegurarse de que las secciones estén ocultas al cargar la página
   toggleSectionsVisibility(isBusinessMode);
 });

@@ -367,8 +367,40 @@
       </section>
 
       <section id="FAQ">
-        <!-- Contenido del formulario de contacto -->
-        <h2>Preguntas frecuentes</h2>
+        <div class="container">
+          <div class="left-column">
+            <img src="./assets/bus-faq.jpg" alt="Parada de bus" />
+          </div>
+          <div class="right-column">
+            <h2>Preguntas frecuentes</h2>
+            <div class="card-FAQ">
+              <div class="card-header" onclick="toggleCard(1)" id="header1">
+                ¿La información es en tiempo real? <span id="icon1">+</span>
+              </div>
+              <div class="card-content-FAQ" id="content1">
+                Sí. Debido a que utilizamos tecnologías IOT brindamos
+                información precisa y actualizada a nuestros usuarios.
+              </div>
+            </div>
+            <div class="card-FAQ">
+              <div class="card-header" onclick="toggleCard(2)" id="header2">
+                ¿Cuáles son los planes de pago?<span id="icon2">+</span>
+              </div>
+              <div class="card-content-FAQ" id="content2">
+                Content for card 2
+              </div>
+            </div>
+            <div class="card-FAQ">
+              <div class="card-header" onclick="toggleCard(3)" id="header3">
+                ¿Qué información sobre mi flota me brinda?
+                <span id="icon3">+</span>
+              </div>
+              <div class="card-content-FAQ" id="content3">
+                Content for card 3
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

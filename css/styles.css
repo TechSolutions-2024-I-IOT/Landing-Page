@@ -628,3 +628,46 @@ footer {
   height: 32px;
   margin: 0 10px;
 }
+.container {
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-FAQ {
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.card-header {
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex; /* Añade flexbox */
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+}
+
+.card-content-FAQ {
+  display: none;
+  padding: 10px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+}
