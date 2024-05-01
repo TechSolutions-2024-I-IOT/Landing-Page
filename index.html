@@ -314,8 +314,9 @@
           (FAQ) por si su duda esta resuelta. Si no, por favor, no dude en
           ponerte en contacto con nosotros.
         </p>
-        <form action="/submit-question" method="post">
+        <form>
           <label for="name" id="questions_name">Nombre completo:</label><br />
+          <span id="nameError" class="error-message"></span>
           <input
             type="text"
             id="name"
@@ -323,16 +324,18 @@
             maxlength="30"
             required
           /><br />
-          <label for="email" id="questions_email">Correo:</label><br />
+          <label for="email" id="questions_email>Correo:</label><br />
+          <span id="emailError" class="error-message"></span>
           <input
             type="email"
             id="email"
             name="email"
             maxlength="50"
             required
-          /><br />
+          />
+          <br />
           <label for="category" id="questions_category">Categoría:</label><br />
-          <select id="category" name="category" style="font-family: Urbanist">
+         <select id="category" name="category" style="font-family: Urbanist">
             <option value="passenger" selected id="passenger">Pasajero</option>
             <option value="business" id="company">Empresa</option></select
           ><br />
@@ -344,7 +347,8 @@
             required
           ></textarea
           ><br />
-          <button type="button" onclick="sendMail()">Enviar</button>
+          <span id="messageError" class="error-message"></span><br />
+          <button type="button" onclick="sendMailProcess()">Enviar</button>
         </form>
       </section>
 

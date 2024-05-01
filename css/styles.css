@@ -531,6 +531,9 @@ input:checked + .slider:before {
   max-width: 150px; /* Ancho máximo de las imágenes de los botones */
   height: auto;
 }
+
+/*---------------- EQUIPO ---------------------- */
+
 #our-team {
   padding: 50px 0;
 }
@@ -553,7 +556,7 @@ input:checked + .slider:before {
 }
 
 .member-card {
-  width: 300px;
+  width: 500px;
   margin: 10px;
   border: 1px solid var(--color-gray-4);
   border-radius: 10px;
@@ -599,10 +602,61 @@ input:checked + .slider:before {
   font-size: 18px;
 }
 
+@media (max-width: 850px) {
+  .row {
+    flex-direction: column; 
+  }
+
+  .member-card {
+    width: 90%; 
+    margin: 10px auto; 
+  }
+
+  .member-description p, .member-info p {
+    font-size: 14px; 
+  }
+
+  .member-image img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1368px) {
+  .row {
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center; 
+  }
+
+  .member-card {
+    flex: 0 1 45%; 
+    margin: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .member-description, .member-info {
+    padding: 15px; 
+  }
+
+  .member-image img {
+    width: 80px; 
+    height: 80px;
+  }
+
+  .member-description p, .member-info p {
+    font-size: 14px; 
+  }
+}
+
+/*---------------- OUR TEAM ---------------------- */
+
+
+/*---------------- FOOTER ---------------------- */
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 5rem;
   background-color: var(--color-secondary);
 }
 
@@ -611,15 +665,56 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
+  justify-content: center; 
+}
+
+.center-section{
+  margin-right: 10rem;
 }
 
 .right-section {
-  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 20px;
+}
+.footer-links{
+  align-self: end;
+}
+
+.footer-links ul {
+  font-weight: bold;
+  list-style: none; 
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 850px) {
+  footer {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2rem 1rem; 
+  }
+
+  .left-section,
+  .center-section,
+  .right-section {
+    flex: 1 0 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .center-section{
+    margin-right: 0rem;
+  }
+
+  .social-icons a {
+    margin: 0 10px; 
+  }
 }
 
 .connect-with-us {
@@ -644,11 +739,7 @@ footer {
   display: flex;
 }
 
-.left-column,
-.right-column {
-  flex: 1;
-  padding: 20px;
-}
+/*---------------- FOOTER ---------------------- */
 
 .left-column {
   display: flex;
@@ -673,8 +764,8 @@ footer {
   color: var(--color-white);
   padding: 10px;
   border-radius: 10px;
-  display: flex; /* Añade flexbox */
-  justify-content: space-between; /* Alinea los elementos a los extremos */
+  display: flex; 
+  justify-content: space-between; 
 }
 
 .card-header p {
@@ -701,6 +792,12 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   width: 60%; /* Ajusta esto según tus necesidades */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  height: 20px; /* Asegura un espacio reservado incluso cuando no hay error */
 }
 
 #questions input[type="text"],
