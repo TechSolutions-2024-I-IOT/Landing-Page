@@ -557,12 +557,18 @@ input:checked + .slider:before {
 
 .member-card {
   width: 500px;
+  height: 270px;
   margin: 10px;
   border: 1px solid var(--color-gray-4);
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.single {
+  flex: 1;
+  max-width: 100%;
 }
 
 .member-info {
@@ -604,16 +610,17 @@ input:checked + .slider:before {
 
 @media (max-width: 850px) {
   .row {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .member-card {
-    width: 90%; 
-    margin: 10px auto; 
+    width: 90%;
+    margin: 10px auto;
   }
 
-  .member-description p, .member-info p {
-    font-size: 14px; 
+  .member-description p,
+  .member-info p {
+    font-size: 14px;
   }
 
   .member-image img {
@@ -624,33 +631,37 @@ input:checked + .slider:before {
 
 @media (min-width: 601px) and (max-width: 1368px) {
   .row {
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .member-card {
-    flex: 0 1 45%; 
+    flex: 0 1 45%;
     margin: 10px 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .member-description, .member-info {
-    padding: 15px; 
+  .member-description,
+  .member-info {
+    padding: 15px;
   }
 
   .member-image img {
-    width: 80px; 
+    width: 80px;
     height: 80px;
   }
 
-  .member-description p, .member-info p {
-    font-size: 14px; 
+  .member-description p,
+  .member-info p {
+    font-size: 14px;
+  }
+  .single {
+    width: 90%;
   }
 }
 
 /*---------------- OUR TEAM ---------------------- */
-
 
 /*---------------- FOOTER ---------------------- */
 footer {
@@ -665,10 +676,10 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.center-section{
+.center-section {
   margin-right: 10rem;
 }
 
@@ -678,13 +689,13 @@ footer {
   justify-content: center;
   padding-bottom: 20px;
 }
-.footer-links{
+.footer-links {
   align-self: end;
 }
 
 .footer-links ul {
   font-weight: bold;
-  list-style: none; 
+  list-style: none;
   padding: 0;
 }
 
@@ -695,9 +706,9 @@ footer {
 
 @media (max-width: 850px) {
   footer {
-    flex-direction: column; 
-    align-items: center; 
-    padding: 2rem 1rem; 
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
   }
 
   .left-section,
@@ -708,12 +719,12 @@ footer {
     margin-bottom: 1rem;
   }
 
-  .center-section{
+  .center-section {
     margin-right: 0rem;
   }
 
   .social-icons a {
-    margin: 0 10px; 
+    margin: 0 10px;
   }
 }
 
@@ -764,8 +775,8 @@ footer {
   color: var(--color-white);
   padding: 10px;
   border-radius: 10px;
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-content-FAQ {
