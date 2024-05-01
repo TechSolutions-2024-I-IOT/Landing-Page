@@ -286,6 +286,7 @@
         </p>
         <form>
           <label for="name">Nombre completo:</label><br />
+          <span id="nameError" class="error-message"></span>
           <input
             type="text"
             id="name"
@@ -294,13 +295,15 @@
             required
           /><br />
           <label for="email">Correo:</label><br />
+          <span id="emailError" class="error-message"></span>
           <input
             type="email"
             id="email"
             name="email"
             maxlength="50"
             required
-          /><br />
+          />
+          <br />
           <label for="category">Categoría:</label><br />
           <select id="category" name="category" style="font-family: Urbanist">
             <option value="passenger" selected>Pasajero</option>
@@ -314,7 +317,8 @@
             required
           ></textarea
           ><br />
-          <button type="button" onclick="sendMail()">Enviar</button>
+          <span id="messageError" class="error-message"></span><br />
+          <button type="button" onclick="sendMailProcess()">Enviar</button>
         </form>
       </section>
 

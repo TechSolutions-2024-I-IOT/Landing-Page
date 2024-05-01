@@ -698,6 +698,12 @@ footer {
   width: 60%; /* Ajusta esto según tus necesidades */
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  height: 20px; /* Asegura un espacio reservado incluso cuando no hay error */
+}
+
 #questions input[type="text"],
 #questions input[type="email"],
 #questions select,
