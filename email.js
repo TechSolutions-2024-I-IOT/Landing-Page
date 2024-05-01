@@ -9,6 +9,10 @@ function sendMailProcess() {
         return; // Si el formulario no es válido, detiene la función aquí
     }
     sendMail(); // Envía el formulario si todo es válido
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 2000);
+
 }
 
 
