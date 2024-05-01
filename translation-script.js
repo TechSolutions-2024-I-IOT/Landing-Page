@@ -11,9 +11,11 @@ function replaceText(elementId, translationKey) {
 function applyTranslations() {
   replaceText("company", "company");
   replaceText("passenger", "passenger");
-  replaceText("questions", "questions");
+  replaceText("doubts", "doubts");
   replaceText("we", "we");
   replaceText("extraButton", "extraButton");
+  replaceText("heroButton-primary", "heroButton-primary");
+  replaceText("heroButton-tertiary", "heroButton-tertiary");
   replaceText("hero_passenger_title", "hero_passenger_title");
   replaceText("hero_business_title", "hero_business_title");
   replaceText("features_passenger_title", "features_passenger_title");

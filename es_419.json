@@ -1,9 +1,11 @@
 {
   "company": "Empresa",
   "passenger": "Pasajero",
-  "questions": "¿Dudas?",
+  "doubts": "¿Dudas?",
   "we": "Nosotros",
   "extraButton": "Descargar",
+  "heroButton-primary": "Descargar",
+  "heroButton-tertiary": "Descargar",
   "hero_passenger_title": "Mejora tu experiencia de viaje",
   "hero_business_title": "Administra eficientemente tu flota",
   "features_passenger_title": "Nosotros te ofrecemos",
