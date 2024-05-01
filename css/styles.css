@@ -250,6 +250,42 @@ section.hide {
     -1px 1px 0 var(--color-gray-4), 1px 1px 0 var(--color-gray-4);
 }
 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-tertiary);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider.checked {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 50%; /* Redondear el círculo interior */
+}
+
 .language-dropdown {
   position: relative;
 }
@@ -265,30 +301,6 @@ section.hide {
 .language-button:hover {
   background-color: #333;
   color: #ffffff;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--color-tertiary);
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--color-white);
-  transition: 0.4s;
-  border-radius: 50%; /* Redondear el círculo interior */
 }
 
 /* Cuando el toggle está activado */
@@ -670,4 +682,142 @@ footer {
   padding: 10px;
   border: 1px solid var(--color-secondary);
   border-radius: 10px;
+}
+
+#questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#questions form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%; /* Ajusta esto según tus necesidades */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  height: 20px; /* Asegura un espacio reservado incluso cuando no hay error */
+}
+
+#questions input[type="text"],
+#questions input[type="email"],
+#questions select,
+#questions textarea {
+  width: 100%;
+  margin: 10px 0; /* Añade margen arriba y abajo */
+  padding: 10px;
+  border: 2px solid #556bda; /* Añade un borde de color */
+  border-radius: 10px; /* Añade bordes redondeados */
+}
+
+@media (min-width: 1201px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #mainHeader {
+    display: none;
+  }
+
+  /* Show the mobile header */
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px --color-black-1(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .mobile-header #logo img {
+    max-height: 40px;
+  }
+
+  .mobile-header .hamburger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .mobile-header nav {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: var(--color-white);
+    z-index: 998;
+    overflow-y: auto;
+    list-style-type: none;
+  }
+
+  .mobile-header nav.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .hamburger-list {
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hamburger-list li {
+    margin: 10px 0;
+    list-style-type: none;
+  }
+
+  .hamburger-list li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--color-black-1);
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-switched .slider {
+    background-color: var(--color-primary);
+  }
+
+  .mobile-switched .slider.checked {
+    background-color: var(--color-tertiary);
+  }
+
+  .mobile-switched .slider:before {
+    background-color: var(--color-primary);
+  }
+  .mobile-header nav.open .hamburger-list li a:hover {
+    background-color: #ccc;
+  }
+  .mobile-header nav.open #extraButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+  }
+
+  /* Push down content when mobile header is visible */
+  body {
+    padding-top: 60px;
+  }
+  .menu-open {
+    display: none;
+  }
 }

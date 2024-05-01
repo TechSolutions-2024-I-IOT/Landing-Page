@@ -9,6 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "dhvxaPrGsREz3L-w1",
+        });
+      })();
+    </script>
   </head>
   <body>
     <header id="mainHeader" class="header-grid">
@@ -49,6 +59,40 @@
         </button>
       </div>
     </header>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+      <div id="logo" class="header-section">
+        <img src="./assets/chapatubus-logo.png" alt="Logo de ChapaTuBus" />
+      </div>
+      <div class="switch-container header-section">
+        <span class="switch-label-left medium-text bold">Empresa</span>
+        <label class="switch" id="switchButton-movil">
+          <input type="checkbox" checked="false" />
+          <span class="slider round"></span>
+        </label>
+        <span class="switch-label-right medium-text bold">Pasajeros</span>
+      </div>
+      <div id="languageSwitch" class="header-section">
+        <div class="language-dropdown">
+          <select id="language-selector" class="medium-text">
+            <option value="es_419">🌐ES</option>
+            <option value="en_US">🌐EN</option>
+          </select>
+        </div>
+      </div>
+      <div class="hamburger">&#9776;</div>
+      <nav>
+        <ul class="hamburger-list">
+          <li><a href="#questions">¿Dudas?</a></li>
+          <li><a href="#our-team">Nosotros</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+        </ul>
+        <button id="extraButton" class="download-button large-text bold">
+          Descargar
+        </button>
+      </nav>
+    </div>
 
     <main>
       <section id="heroPassenger" class="hero">
@@ -231,8 +275,51 @@
       </section>
 
       <section id="questions">
-        <!-- Contenido del formulario de preguntas -->
-        <h2>¿Tiene alguna pregunta?</h2>
+        <h2>
+          ¿Tienes preguntas?<br />
+          ¡Estamos aquí para ayudarte!
+        </h2>
+        <p class="color-gray-3">
+          Antes de todo, le invitamos a revisar nuestras preguntas frecuentes
+          (FAQ) por si su duda esta resuelta. Si no, por favor, no dude en
+          ponerte en contacto con nosotros.
+        </p>
+        <form>
+          <label for="name">Nombre completo:</label><br />
+          <span id="nameError" class="error-message"></span>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="30"
+            required
+          /><br />
+          <label for="email">Correo:</label><br />
+          <span id="emailError" class="error-message"></span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="50"
+            required
+          />
+          <br />
+          <label for="category">Categoría:</label><br />
+          <select id="category" name="category" style="font-family: Urbanist">
+            <option value="passenger" selected>Pasajero</option>
+            <option value="business">Empresa</option></select
+          ><br />
+          <label for="message">Mensaje:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            maxlength="300"
+            required
+          ></textarea
+          ><br />
+          <span id="messageError" class="error-message"></span><br />
+          <button type="button" onclick="sendMailProcess()">Enviar</button>
+        </form>
       </section>
 
       <section id="our-team">
@@ -443,6 +530,7 @@
       </div>
     </footer>
 
+    <script src="email.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
