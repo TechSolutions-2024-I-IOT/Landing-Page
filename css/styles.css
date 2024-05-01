@@ -768,11 +768,6 @@ footer {
   justify-content: space-between; 
 }
 
-.card-header p {
-  margin: 0;
-  flex: 1; /* Añade flexbox */
-}
-
 .card-content-FAQ {
   display: none;
   padding: 10px;

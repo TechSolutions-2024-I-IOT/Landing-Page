@@ -9,12 +9,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script type="text/javascript">
-      (function () {
+      (function(){
         emailjs.init({
           publicKey: "dhvxaPrGsREz3L-w1",
         });
@@ -29,23 +28,19 @@
       </div>
 
       <div class="switch-container header-section">
-        <span class="switch-label-left medium-text bold" id="company"
-          >Empresa</span
-        >
+        <span class="switch-label-left medium-text bold">Empresa</span>
         <label class="switch" id="switchButton">
           <input type="checkbox" checked="false" />
           <span class="slider round"></span>
         </label>
-        <span class="switch-label-right medium-text bold" id="passenger"
-          >Pasajeros</span
-        >
+        <span class="switch-label-right medium-text bold">Pasajeros</span>
       </div>
 
       <nav class="header-section medium-text">
         <!-- Enlaces a la derecha -->
         <ul>
-          <li><a href="#questions" id="doubts">¿Dudas?</a></li>
-          <li><a href="#our-team" id="we">Nosotros</a></li>
+          <li><a href="#questions">¿Dudas?</a></li>
+          <li><a href="#our-team">Nosotros</a></li>
           <li><a href="#FAQ">FAQ</a></li>
           <li id="languageSwitch">
             <div class="language-dropdown">
@@ -71,20 +66,16 @@
         <img src="./assets/chapatubus-logo.png" alt="Logo de ChapaTuBus" />
       </div>
       <div class="switch-container header-section">
-        <span class="switch-label-left medium-text bold" id="company"
-          >Empresa</span
-        >
+        <span class="switch-label-left medium-text bold">Empresa</span>
         <label class="switch" id="switchButton-movil">
           <input type="checkbox" checked="false" />
           <span class="slider round"></span>
         </label>
-        <span class="switch-label-right medium-text bold" id="passenger"
-          >Pasajeros</span
-        >
+        <span class="switch-label-right medium-text bold">Pasajeros</span>
       </div>
       <div id="languageSwitch" class="header-section">
         <div class="language-dropdown">
-          <select id="language-selector-movil" class="medium-text">
+          <select id="language-selector" class="medium-text">
             <option value="es_419">🌐ES</option>
             <option value="en_US">🌐EN</option>
           </select>
@@ -93,8 +84,8 @@
       <div class="hamburger">&#9776;</div>
       <nav>
         <ul class="hamburger-list">
-          <li><a href="#questions" id="doubts">¿Dudas?</a></li>
-          <li><a href="#our-team" id="we">Nosotros</a></li>
+          <li><a href="#questions">¿Dudas?</a></li>
+          <li><a href="#our-team">Nosotros</a></li>
           <li><a href="#FAQ">FAQ</a></li>
         </ul>
         <button id="extraButton" class="download-button large-text bold">
@@ -107,9 +98,7 @@
       <section id="heroPassenger" class="hero">
         <div class="hero-content">
           <h2>ChapaTuBus</h2>
-          <h4 class="color-gray-4" id="hero_passenger_title">
-            Mejore su experiencia de viaje
-          </h4>
+          <h4 class="color-gray-4">Mejore su experiencia de viaje</h4>
           <button id="heroButton-primary" class="download-button large-text">
             Descargar
           </button>
@@ -125,9 +114,7 @@
       <section id="heroBusiness" class="hero">
         <div class="hero-content">
           <h2>ChapaTuBus</h2>
-          <h4 class="color-gray-4" id="hero_business_title">
-            Gestione eficientemente su flota
-          </h4>
+          <h4 class="color-gray-4">Gestione eficientemente su flota</h4>
           <button id="heroButton-tertiary" class="download-button large-text">
             Descargar
           </button>
@@ -142,9 +129,7 @@
 
       <section id="featuresPassenger" class="features">
         <div class="section-title">
-          <h2 class="color-white" id="features_passenger_title">
-            Nosotros le ofrecemos
-          </h2>
+          <h2 class="color-white">Nosotros le ofrecemos</h2>
         </div>
         <div class="feature-content">
           <div class="phones">
@@ -165,19 +150,19 @@
             />
           </div>
           <ul class="feature-list">
-            <li class="large-text color-gray-2" id="feature_passenger_li_1">
+            <li class="large-text color-gray-2">
               <i class="fas fa-check"></i> Información actualizada sobre las
               líneas de transporte de tu ciudad.
             </li>
-            <li class="large-text color-gray-2" id="feature_passenger_li_2">
+            <li class="large-text color-gray-2">
               <i class="fas fa-check"></i> Observa el recorrido de los buses en
               tiempo real.
             </li>
-            <li class="large-text color-gray-2" id="feature_passenger_li_3">
+            <li class="large-text color-gray-2">
               <i class="fas fa-check"></i> Información en tiempo real del aforo
               y tiempo de llegada del autobus que esperas.
             </li>
-            <li class="large-text color-gray-2" id="feature_passenger_li_4">
+            <li class="large-text color-gray-2">
               <i class="fas fa-check"></i> Recibe notificaciones personalizadas
               de tus líneas de transporte favoritas.
             </li>
@@ -187,9 +172,7 @@
 
       <section id="featuresBusiness" class="features">
         <div class="section-title">
-          <h2 class="color-white" id="feature_business_title">
-            Gestione a tiempo real su flota
-          </h2>
+          <h2 class="color-white">Gestione a tiempo real su flota</h2>
         </div>
         <div class="cards-container">
           <div class="card">
@@ -198,11 +181,8 @@
               alt="Descripción de la imagen"
             />
             <div class="card-content">
-              <h6 id="feature_business_card_1_title">Rastrea tus buses</h6>
-              <p
-                class="large-text color-gray-5"
-                id="feature_business_card_1_description"
-              >
+              <h6>Rastrea tus buses</h6>
+              <p class="large-text color-gray-5">
                 Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit
                 amet consectetur.
               </p>
@@ -214,11 +194,8 @@
               alt="Descripción de la imagen"
             />
             <div class="card-content">
-              <h6 id="feature_business_card_2_title">Monitorea tus buses</h6>
-              <p
-                class="large-text color-gray-5"
-                id="feature_business_card_2_description"
-              >
+              <h6>Monitorea tus buses</h6>
+              <p class="large-text color-gray-5">
                 Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit
                 amet consectetur.
               </p>
@@ -230,13 +207,8 @@
               alt="Descripción de la imagen"
             />
             <div class="card-content">
-              <h6 id="feature_business_card_3_title">
-                Visualiza tu información
-              </h6>
-              <p
-                class="large-text color-gray-5"
-                id="feature_business_card_3_description"
-              >
+              <h6>Visualiza tu información</h6>
+              <p class="large-text color-gray-5">
                 Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit
                 amet consectetur.
               </p>
@@ -247,7 +219,7 @@
       </section>
 
       <section id="videoPassenger" class="video">
-        <h2 id="video_title">
+        <h2>
           ¿Cómo funciona? <br />
           ¡Échele un vistazo!
         </h2>
@@ -264,10 +236,8 @@
             ></iframe>
           </div>
           <div class="info">
-            <p class="bold large-text" id="video_passenger_subtitle">
-              Consigue nuestra app
-            </p>
-            <p class="medium-text" id="video_passenger_description">
+            <p class="bold large-text">Consigue nuestra app</p>
+            <p class="medium-text">
               ¡Descarga la aplicación para una mejor experiencia!
             </p>
             <div class="buttons">
@@ -285,7 +255,7 @@
       </section>
 
       <section id="videoBusiness" class="video">
-        <h2 id="video_title">
+        <h2>
           ¿Cómo funciona? <br />
           ¡Échele un vistazo!
         </h2>
@@ -305,17 +275,17 @@
       </section>
 
       <section id="questions">
-        <h2 id="questions_title">
+        <h2>
           ¿Tienes preguntas?<br />
           ¡Estamos aquí para ayudarte!
         </h2>
-        <p class="color-gray-3" id="questions_description">
+        <p class="color-gray-3">
           Antes de todo, le invitamos a revisar nuestras preguntas frecuentes
           (FAQ) por si su duda esta resuelta. Si no, por favor, no dude en
           ponerte en contacto con nosotros.
         </p>
         <form>
-          <label for="name" id="questions_name">Nombre completo:</label><br />
+          <label for="name">Nombre completo:</label><br />
           <span id="nameError" class="error-message"></span>
           <input
             type="text"
@@ -324,7 +294,7 @@
             maxlength="30"
             required
           /><br />
-          <label for="email" id="questions_email>Correo:</label><br />
+          <label for="email">Correo:</label><br />
           <span id="emailError" class="error-message"></span>
           <input
             type="email"
@@ -334,12 +304,12 @@
             required
           />
           <br />
-          <label for="category" id="questions_category">Categoría:</label><br />
-         <select id="category" name="category" style="font-family: Urbanist">
-            <option value="passenger" selected id="passenger">Pasajero</option>
-            <option value="business" id="company">Empresa</option></select
+          <label for="category">Categoría:</label><br />
+          <select id="category" name="category" style="font-family: Urbanist">
+            <option value="passenger" selected>Pasajero</option>
+            <option value="business">Empresa</option></select
           ><br />
-          <label for="message" id="questions_message">Mensaje:</label><br />
+          <label for="message">Mensaje:</label><br />
           <textarea
             id="message"
             name="message"
@@ -354,14 +324,14 @@
 
       <section id="our-team">
         <div class="title-section">
-          <h2 id="we_title">Conozca a nuestro equipo</h2>
+          <h2>Conozca a nuestro equipo</h2>
         </div>
 
         <div class="team-cards">
           <div class="row">
             <div class="member-card">
               <div class="member-info">
-                <p id="we_member_1_info">
+                <p>
                   Considero que poseo buenas habilidades cognitivas adecuadas
                   para la programación. Soy una persona resiliente, además de
                   comprometida y responsable con los proyectos en los que me
@@ -384,7 +354,7 @@
             </div>
             <div class="member-card">
               <div class="member-info">
-                <p id="we_member_2_info">
+                <p>
                   Mi motivación radica en enfrentar desafíos que requieran
                   soluciones creativas e innovadoras. A lo largo de mi carrera,
                   he demostrado ser proactiva y colaborativa, comprometida con
@@ -409,7 +379,7 @@
           <div class="row">
             <div class="member-card">
               <div class="member-info">
-                <p id="we_member_3_info">
+                <p>
                   Mi enfoque en el área de desarrollo es más que todo de
                   Backend. Me gusta aprender nuevas tecnologías y desarrollar
                   mis habilidades en conjunto con los que me rodean. Me gusta
@@ -432,8 +402,8 @@
             </div>
             <div class="member-card">
               <div class="member-info">
-                <p id="we_member_4_info">
-                  Durante el desarrollo de mi carrera he enfrentado diversas
+                <p>
+                  Durante el desarrollo de mi carreara he enfrentado diversas
                   situaciones en los trabajos lo cual ha mejorado mi resilencia
                   y capacidad de trabajo colaborativo. Soy consciente de que el
                   mundo nunca se detiene.
@@ -457,7 +427,7 @@
           <div class="row">
             <div class="member-card single">
               <div class="member-info">
-                <p id="we_member_5_info">
+                <p>
                   Mi nombre es Rafael Primo Estrada y estudio la carrera de
                   Ingeniería de Software, poseo un alto interés por el
                   desarrollo móvil. Mis principales hobbies son los videojuegos
@@ -489,37 +459,31 @@
             <img src="./assets/bus-faq.jpg" alt="Parada de bus" />
           </div>
           <div class="right-column">
-            <h2 id="FAQ_title">Preguntas frecuentes</h2>
+            <h2>Preguntas frecuentes</h2>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(1)" id="header1">
-                <p id="FAQ_question_1">¿La información es en tiempo real?</p>
-                <span id="icon1">+</span>
+                ¿La información es en tiempo real? <span id="icon1">+</span>
               </div>
               <div class="card-content-FAQ" id="content1">
-                <p id="FAQ_answer_1">
-                  Sí. Debido a que utilizamos tecnologías IOT brindamos
-                  información precisa y actualizada a nuestros usuarios.
-                </p>
+                Sí. Debido a que utilizamos tecnologías IOT brindamos
+                información precisa y actualizada a nuestros usuarios.
               </div>
             </div>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(2)" id="header2">
-                <p id="FAQ_question_2">¿Cuáles son los planes de pago?</p>
-                <span id="icon2">+</span>
+                ¿Cuáles son los planes de pago?<span id="icon2">+</span>
               </div>
               <div class="card-content-FAQ" id="content2">
-                <p>Content for card 2</p>
+                Content for card 2
               </div>
             </div>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(3)" id="header3">
-                <p id="FAQ_question_3">
-                  ¿Qué información sobre mi flota me brinda?
-                </p>
+                ¿Qué información sobre mi flota me brinda?
                 <span id="icon3">+</span>
               </div>
               <div class="card-content-FAQ" id="content3">
-                <p>Content for card 3</p>
+                Content for card 3
               </div>
             </div>
           </div>
@@ -538,20 +502,16 @@
       <div class="center-section">
         <div class="footer-links small-text">
           <ul>
-            <li><a href="#" id="privacy_policy">Políticas de privacidad</a></li>
-            <li><a href="#" id="cookie_policy">Políticas de cookies</a></li>
-            <li>
-              <a href="#" id="terms_conditions">Términos y condiciones</a>
-            </li>
-            <li><a href="#" id="legal">Legal</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+            <li><a href="#">Políticas de cookies</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Legal</a></li>
           </ul>
         </div>
       </div>
       <div class="right-section">
         <div class="connect-with-us">
-          <p class="bold large-text" id="connect_with_us">
-            Conecta con nosotros
-          </p>
+          <p class="bold large-text">Conecta con nosotros</p>
           <div class="social-icons">
             <a href="#"
               ><img src="./assets/icons8-facebook-nuevo.svg" alt="Facebook"
@@ -572,6 +532,5 @@
 
     <script src="email.js"></script>
     <script src="script.js"></script>
-    <script src="./translation-script.js"></script>
   </body>
 </html>
