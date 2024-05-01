@@ -15,6 +15,7 @@ function toggleCard(cardNumber) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const switchButton = document.getElementById("switchButton");
+  const switchButtonMovil = document.getElementById("switchButton-movil");
   const sections = {
     passenger: ["heroPassenger", "featuresPassenger", "videoPassenger"],
     business: ["heroBusiness", "featuresBusiness", "videoBusiness"],
@@ -26,14 +27,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Establecer la visibilidad inicial al cargar la página
   let isBusinessMode = false;
+  // if (isBusinessMode) {
+  //   switchButton.querySelector(".slider").classList.add("checked");
+  //   switchButtonMovil.querySelector(".slider").classList.add("checked");
+  // } else {
+  //   switchButton.querySelector(".slider").classList.remove("checked");
+  //   switchButtonMovil.querySelector(".slider").classList.remove("checked");
+  // }
 
   // Agregar un listener al botón de alternancia para controlar la visibilidad
   switchButton.addEventListener("change", function () {
     isBusinessMode = !isBusinessMode; // Cambiar el modo cada vez que se interactúe con el botón
     toggleSectionsVisibility(isBusinessMode);
     updateDownloadButtonColor(isBusinessMode);
+    switchButtonMovil.checked = switchButton.querySelector("input"); // Sincronizar el estado del switchButtonMovil con el switchButton
+    if (isBusinessMode) {
+      switchButton.querySelector(".slider").classList.add("checked");
+      switchButtonMovil.querySelector(".slider").classList.remove("checked");
+    } else {
+      switchButton.querySelector(".slider").classList.remove("checked");
+      switchButtonMovil.querySelector(".slider").classList.add("checked");
+    }
   });
-
+  switchButtonMovil.addEventListener("change", function () {
+    isBusinessMode = !isBusinessMode; // Cambiar el modo cada vez que se interactúe con el botón móvil
+    toggleSectionsVisibility(isBusinessMode);
+    updateDownloadButtonColor(isBusinessMode);
+    switchButton.checked = switchButtonMovil.querySelector("input"); // Sincronizar el estado del switchButton con el switchButtonMovil
+    if (isBusinessMode) {
+      switchButtonMovil.querySelector(".slider").classList.add("checked");
+      switchButton.querySelector(".slider").classList.remove("checked");
+    } else {
+      switchButtonMovil.querySelector(".slider").classList.remove("checked");
+      switchButton.querySelector(".slider").classList.add("checked");
+    }
+  });
   // Función para alternar la visibilidad de las secciones
   function toggleSectionsVisibility(isBusinessMode) {
     const mode = isBusinessMode ? "business" : "passenger";
@@ -50,21 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById(sectionId).classList.add("hide");
     });
   }
-  // Función para cambiar el color del botón de descarga
-  // for (let i = 1; i <= 3; i++) {
-  //   document
-  //     .getElementById("header" + i)
-  //     .addEventListener("click", function () {
-  //       toggleCard(i);
-  //     });
+  const hamburger = document.querySelector(".hamburger");
+  const mobileNav = document.querySelector(".mobile-header nav");
+  // const exitButton = document.querySelector(".mobile-header nav .exit-button");
+  const main = document.querySelector("main");
 
-  //   // Restaurar el estado de las tarjetas al cargar la página
-  //   var state = localStorage.getItem("card" + i);
-  //   if (state === "open") {
-  //     document.getElementById("content" + i).style.display = "block";
-  //     document.getElementById("icon" + i).textContent = "-";
-  //   }
-  // }
-  // Llamar a toggleSectionsVisibility para asegurarse de que las secciones estén ocultas al cargar la página
+  hamburger.addEventListener("click", () => {
+    mobileNav.classList.toggle("open");
+    main.classList.toggle("menu-open");
+  });
+
   toggleSectionsVisibility(isBusinessMode);
 });
