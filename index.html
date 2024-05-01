@@ -84,7 +84,7 @@
       </div>
       <div id="languageSwitch" class="header-section">
         <div class="language-dropdown">
-          <select id="language-selector" class="medium-text">
+          <select id="language-selector-movil" class="medium-text">
             <option value="es_419">🌐ES</option>
             <option value="en_US">🌐EN</option>
           </select>
@@ -165,19 +165,19 @@
             />
           </div>
           <ul class="feature-list">
-            <li class="large-text color-gray-2">
+            <li class="large-text color-gray-2" id="feature_passenger_li_1">
               <i class="fas fa-check"></i> Información actualizada sobre las
               líneas de transporte de tu ciudad.
             </li>
-            <li class="large-text color-gray-2">
+            <li class="large-text color-gray-2" id="feature_passenger_li_2">
               <i class="fas fa-check"></i> Observa el recorrido de los buses en
               tiempo real.
             </li>
-            <li class="large-text color-gray-2">
+            <li class="large-text color-gray-2" id="feature_passenger_li_3">
               <i class="fas fa-check"></i> Información en tiempo real del aforo
               y tiempo de llegada del autobus que esperas.
             </li>
-            <li class="large-text color-gray-2">
+            <li class="large-text color-gray-2" id="feature_passenger_li_4">
               <i class="fas fa-check"></i> Recibe notificaciones personalizadas
               de tus líneas de transporte favoritas.
             </li>
@@ -488,28 +488,34 @@
             <h2 id="FAQ_title">Preguntas frecuentes</h2>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(1)" id="header1">
-                ¿La información es en tiempo real? <span id="icon1">+</span>
+                <p id="FAQ_question_1">¿La información es en tiempo real?</p>
+                <span id="icon1">+</span>
               </div>
               <div class="card-content-FAQ" id="content1">
-                Sí. Debido a que utilizamos tecnologías IOT brindamos
-                información precisa y actualizada a nuestros usuarios.
+                <p id="FAQ_answer_1">
+                  Sí. Debido a que utilizamos tecnologías IOT brindamos
+                  información precisa y actualizada a nuestros usuarios.
+                </p>
               </div>
             </div>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(2)" id="header2">
-                ¿Cuáles son los planes de pago?<span id="icon2">+</span>
+                <p id="FAQ_question_2">¿Cuáles son los planes de pago?</p>
+                <span id="icon2">+</span>
               </div>
               <div class="card-content-FAQ" id="content2">
-                Content for card 2
+                <p>Content for card 2</p>
               </div>
             </div>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(3)" id="header3">
-                ¿Qué información sobre mi flota me brinda?
+                <p id="FAQ_question_3">
+                  ¿Qué información sobre mi flota me brinda?
+                </p>
                 <span id="icon3">+</span>
               </div>
               <div class="card-content-FAQ" id="content3">
-                Content for card 3
+                <p>Content for card 3</p>
               </div>
             </div>
           </div>

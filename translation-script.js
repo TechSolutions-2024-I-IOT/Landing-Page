@@ -1,4 +1,5 @@
 var languageSelector = document.getElementById("language-selector");
+var languageSelectorMovil = document.getElementById("language-selector-movil");
 
 function replaceText(elementId, translationKey) {
   var element = document.getElementById(elementId);
@@ -63,4 +64,19 @@ languageSelector.addEventListener("change", function () {
     .catch((error) => {
       console.error("Error fetching translations:", error);
     });
+  languageSelectorMovil.value = selectedLanguage;
+});
+
+languageSelectorMovil.addEventListener("change", function () {
+  var selectedLanguage = languageSelectorMovil.value;
+  fetch(selectedLanguage + ".json")
+    .then((response) => response.json())
+    .then((data) => {
+      window.translations = data;
+      applyTranslations();
+    })
+    .catch((error) => {
+      console.error("Error fetching translations:", error);
+    });
+  languageSelector.value = selectedLanguage;
 });
