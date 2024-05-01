@@ -9,6 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "dhvxaPrGsREz3L-w1",
+        });
+      })();
+    </script>
   </head>
   <body>
     <header id="mainHeader" class="header-grid">
@@ -274,7 +284,7 @@
           (FAQ) por si su duda esta resuelta. Si no, por favor, no dude en
           ponerte en contacto con nosotros.
         </p>
-        <form action="/submit-question" method="post">
+        <form>
           <label for="name">Nombre completo:</label><br />
           <input
             type="text"
@@ -304,7 +314,7 @@
             required
           ></textarea
           ><br />
-          <input type="submit" value="Enviar" />
+          <button type="button" onclick="sendMail()">Enviar</button>
         </form>
       </section>
 
@@ -516,6 +526,7 @@
       </div>
     </footer>
 
+    <script src="email.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
