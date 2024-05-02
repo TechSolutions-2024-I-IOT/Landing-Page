@@ -60,7 +60,7 @@ function applyTranslations() {
 
 languageSelector.addEventListener("change", function () {
   var selectedLanguage = languageSelector.value;
-  var jsonFilePath = "/assets/languages/" + selectedLanguage + ".json";
+  var jsonFilePath = "assets/languages/" + selectedLanguage + ".json";
   fetch(jsonFilePath)
     .then((response) => response.json())
     .then((data) => {
@@ -75,7 +75,7 @@ languageSelector.addEventListener("change", function () {
 
 languageSelectorMovil.addEventListener("change", function () {
   var selectedLanguage = languageSelectorMovil.value;
-  var jsonFilePath = "/assets/languages/" + selectedLanguage + ".json";
+  var jsonFilePath = "assets/languages/" + selectedLanguage + ".json";
   fetch(jsonFilePath)
     .then((response) => response.json())
     .then((data) => {
