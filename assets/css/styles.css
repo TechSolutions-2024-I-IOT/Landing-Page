@@ -691,7 +691,7 @@ input:checked + .slider:before {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 0 10rem;
   background-color: var(--color-secondary);
   color: var(--color-black-2);
 }
@@ -719,7 +719,6 @@ footer {
 }
 
 .footer-links ul {
-  font-weight: bold;
   list-style: none;
   padding: 0;
 }
