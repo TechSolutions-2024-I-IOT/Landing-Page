@@ -136,23 +136,23 @@
           </h2>
         </div>
         <div class="feature-content">
-          <div class="phones">
-            <img src="./assets/img/passenge-experience.png" alt="Experiencia de pasajero" style="width: 500px;"/>
+          <div class="left-column">
+            <img src="./assets/img/passenge-experience.png" alt="Experiencia de pasajero"/>
           </div>
           <ul class="feature-list">
-            <li class="large-text color-gray-2" id="feature_passenger_li_1">
+            <li class="color-gray-2" id="feature_passenger_li_1">
               <i class="fas fa-check"></i> Updated information about your city's transportation lines.
             </li>
-            <li class="large-text color-gray-2" id="feature_passenger_li_2">
+            <li class="color-gray-2" id="feature_passenger_li_2">
               <i class="fas fa-check"></i> Observe the bus route in time real.
             </li>
-            <li class="large-text color-gray-2" id="feature_passenger_li_3">
+            <li class="color-gray-2" id="feature_passenger_li_3">
               <i class="fas fa-check"></i> Real-time information on the capacity and arrival time of the bus you are waiting for.
             </li>
-            <li class="large-text color-gray-2" id="feature_passenger_li_4">
+            <li class="color-gray-2" id="feature_passenger_li_4">
               <i class="fas fa-check"></i> Receive personalized notifications from your favorite transportation lines.
             </li>
-            <button id="heroButton-primary" class="download-button large-text">
+            <button id="heroButton-primary" class="download-button large-text" onclick="window.location.href='https://chapatubus.netlify.app/'">
               Test it!
             </button>
           </ul>
@@ -292,12 +292,12 @@
           <span id="emailError" class="error-message"></span>
           <input type="email" id="email" name="email" maxlength="50" required />
           <br />
-          <label for="category">Category</label><br />
+          <label for="category" id="questions_category">Category</label><br />
           <select id="category" name="category" style="font-family: Urbanist">
             <option value="passenger" selected id="passenger">Passenger</option>
             <option value="business" id="company">Company</option></select
           ><br />
-          <label for="message" id="questions_message">Message/label><br />
+          <label for="message" id="questions_message">Message</label><br />
           <textarea
             id="message"
             name="message"
@@ -306,7 +306,7 @@
           ></textarea
           ><br />
           <span id="messageError" class="error-message"></span><br />
-          <button type="button" onclick="sendMailProcess()" id="questions_send" class="download-button large-text bold">
+          <button type="button" onclick="sendMailProcess()" id="questions_send" class="download-button large-text bold color-white">
            Send
           </button>
         </form>
