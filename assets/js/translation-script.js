@@ -27,6 +27,9 @@ function applyTranslations() {
   replaceText("feature_business_card_1_title", "feature_business_card_1_title");
   replaceText("feature_business_card_2_title", "feature_business_card_2_title");
   replaceText("feature_business_card_3_title", "feature_business_card_3_title");
+  replaceText("feature_business_card_1_description", "feature_business_card_1_description");
+  replaceText("feature_business_card_2_description", "feature_business_card_2_description");
+  replaceText("feature_business_card_3_description", "feature_business_card_3_description");
   replaceText("video_title_a", "video_title_a");
   replaceText("video_title_b", "video_title_b");
   replaceText("video_passenger_subtitle", "video_passenger_subtitle");

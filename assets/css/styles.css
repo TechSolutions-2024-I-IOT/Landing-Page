@@ -316,7 +316,7 @@ input:checked + .slider:before {
   align-items: center;
   padding: 60px;
   margin-top: 30px;
-  background-image: url(./assets/img/principal-image.png);
+  background-image: url(/assets/img/principal-image.png);
   background-size: cover;
   background-position: center;
   min-height: 700px;
@@ -618,7 +618,6 @@ input:checked + .slider:before {
 .member-image img {
   width: 100px;
   height: 100px;
-  border: 2px solid black;
   border-radius: 50%;
 }
 
@@ -684,6 +683,7 @@ input:checked + .slider:before {
     width: 90%;
   }
 }
+
 
 /*---------------- OUR TEAM ---------------------- */
 
@@ -777,6 +777,15 @@ footer {
 
 /*---------------- FOOTER ---------------------- */
 
+#FAQ .container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FAQ_title{
+  color: var(--color-primary);
+}
 .left-column {
   display: flex;
   justify-content: center;
@@ -787,6 +796,10 @@ footer {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.right-column {
+  width: 50%; /* Establece un ancho para la columna derecha */
 }
 
 .card-FAQ {
@@ -818,6 +831,28 @@ footer {
   text-align: center;
 }
 
+
+#questions #questions_title_a, #questions_title_b{
+  color: var(--color-primary);
+}
+
+#questions #questions_title_a{
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 30px;
+}
+
+#questions #questions_title_b{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#questions #questions_description{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
 #questions form {
   display: flex;
   flex-direction: column;
@@ -833,10 +868,8 @@ footer {
 
 #questions input[type="text"],
 #questions input[type="email"],
-#questions select,
-#questions textarea {
+#questions select, #questions #message {
   width: 100%;
-  margin: 10px 0; /* Añade margen arriba y abajo */
   padding: 10px;
   border: 2px solid #556bda; /* Añade un borde de color */
   border-radius: 10px; /* Añade bordes redondeados */
