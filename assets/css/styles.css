@@ -375,6 +375,7 @@ input:checked + .slider:before {
 .features {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: var(--color-white);
@@ -389,14 +390,11 @@ input:checked + .slider:before {
 .feature-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-top: 20px;
   align-items: flex-start;
   margin-bottom: 20px;
-}
-.phone-container {
-  width: 100%;
-  position: relative;
 }
 
 .phones {
@@ -461,6 +459,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   height: auto;
+  margin-bottom: 40px;
 }
 
 .card {
@@ -468,14 +467,14 @@ input:checked + .slider:before {
   flex-direction: column;
   width: 30%;
   height: 100%;
-  border: 4px solid var(--color-white);
+  border: 2px solid var(--color-primary);
 }
 
 .card img {
   height: 70%;
   width: 100%;
   object-fit: cover;
-  border: 4px solid var(--color-white);
+  border: 1px solid var(--color-primary);
   box-sizing: border-box;
 }
 
@@ -497,14 +496,20 @@ input:checked + .slider:before {
   height: auto;
   padding: 20px 0;
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 #video_title_a {
-  color: var(--color-white);
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 30px;
 }
 
 #video_title_b {
-  color: var(--color-white);
+  font-size: 30px;
+  font-weight: 600;
+
 }
 
 .video .content {
@@ -613,7 +618,6 @@ input:checked + .slider:before {
 .member-image img {
   width: 100px;
   height: 100px;
-  border: 2px solid black;
   border-radius: 50%;
 }
 
@@ -680,13 +684,14 @@ input:checked + .slider:before {
   }
 }
 
+
 /*---------------- OUR TEAM ---------------------- */
 
 /*---------------- FOOTER ---------------------- */
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 0 10rem;
   background-color: var(--color-secondary);
   color: var(--color-black-2);
 }
@@ -714,7 +719,6 @@ footer {
 }
 
 .footer-links ul {
-  font-weight: bold;
   list-style: none;
   padding: 0;
 }
@@ -772,6 +776,15 @@ footer {
 
 /*---------------- FOOTER ---------------------- */
 
+#FAQ .container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FAQ_title{
+  color: var(--color-primary);
+}
 .left-column {
   display: flex;
   justify-content: center;
@@ -782,6 +795,10 @@ footer {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.right-column {
+  width: 50%; /* Establece un ancho para la columna derecha */
 }
 
 .card-FAQ {
@@ -813,6 +830,28 @@ footer {
   text-align: center;
 }
 
+
+#questions #questions_title_a, #questions_title_b{
+  color: var(--color-primary);
+}
+
+#questions #questions_title_a{
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 30px;
+}
+
+#questions #questions_title_b{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#questions #questions_description{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
 #questions form {
   display: flex;
   flex-direction: column;
@@ -828,10 +867,8 @@ footer {
 
 #questions input[type="text"],
 #questions input[type="email"],
-#questions select,
-#questions textarea {
+#questions select, #questions #message {
   width: 100%;
-  margin: 10px 0; /* Añade margen arriba y abajo */
   padding: 10px;
   border: 2px solid #556bda; /* Añade un borde de color */
   border-radius: 10px; /* Añade bordes redondeados */
@@ -895,15 +932,18 @@ footer {
   }
 
   .hamburger-list {
+    display: flex;
     list-style: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
     width: 100%;
   }
 
   .hamburger-list li {
-    margin: 10px 0;
+    margin-bottom: 10px;
     list-style-type: none;
   }
 
@@ -913,6 +953,12 @@ footer {
     text-decoration: none;
     color: var(--color-black-1);
     transition: background-color 0.3s ease;
+  }
+
+  .hamburger-list li button{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
   }
 
   .mobile-switched .slider {
