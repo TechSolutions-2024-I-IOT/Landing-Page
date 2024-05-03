@@ -316,7 +316,7 @@ input:checked + .slider:before {
   align-items: center;
   padding: 60px;
   margin-top: 30px;
-  background-image: url(https://raw.githubusercontent.com/TechSolutions-2024-I-IOT/Landing-Page/develop/assets/img/principal-image.png) no repeat;
+  background-image: url(https://raw.githubusercontent.com/TechSolutions-2024-I-IOT/Landing-Page/develop/assets/img/principal-image.png);
   background-size: cover;
   background-position: center;
   min-height: 700px;
