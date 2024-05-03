@@ -469,6 +469,10 @@ input:checked + .slider:before {
     align-items: center;
     align-content: center;
   }
+
+  .video-container iframe {
+    max-width: 100%;
+  }
 }
 
 .section-title {
