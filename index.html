@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>ChapaTuBus</title>
     <link
       href="https://fonts.googleapis.com/css?family=Urbanist"
       rel="stylesheet"
@@ -35,26 +35,26 @@
       <nav class="header-section medium-text">
         <div class="switch-container header-section">
           <span class="switch-label-left medium-text" id="company"
-            >Empresa</span
+            >Company</span
           >
           <label class="switch" id="switchButton">
             <input type="checkbox" checked="false" />
             <span class="slider round"></span>
           </label>
           <span class="switch-label-right medium-text" id="passenger"
-            >Pasajeros</span
+            >Passenger</span
           >
         </div>
         <!-- Enlaces a la derecha -->
         <ul>
-          <li><a href="#questions" id="doubts">¿Dudas?</a></li>
-          <li><a href="#our-team" id="we">Nosotros</a></li>
+          <li><a href="#questions" id="doubts">Doubts?</a></li>
+          <li><a href="#our-team" id="we">About Us</a></li>
           <li><a href="#FAQ">FAQ</a></li>
           <li id="languageSwitch">
             <div class="language-dropdown">
               <select id="language-selector" class="medium-text">
-                <option value="es_419">🌐ES</option>
                 <option value="en_US">🌐EN</option>
+                <option value="es_419">🌐ES</option>
               </select>
             </div>
           </li>
@@ -62,8 +62,8 @@
       </nav>
 
       <div class="header-section">
-        <button id="extraButton" class="download-button large-text bold">
-          Descargar
+        <button id="extraButton" class="download-button large-text bold" onclick="window.location.href='https://chapatubus.netlify.app/'"> 
+          Start
         </button>
       </div>
     </header>
@@ -75,33 +75,31 @@
       </div>
       <div class="switch-container header-section">
         <span class="switch-label-left medium-text bold" id="company"
-          >Empresa</span
-        >
+          >Company</span>
         <label class="switch" id="switchButton-movil">
           <input type="checkbox" checked="false" />
           <span class="slider round"></span>
         </label>
         <span class="switch-label-right medium-text bold" id="passenger"
-          >Pasajeros</span
-        >
+          >Passenger</span>
       </div>
       <div id="languageSwitch" class="header-section">
         <div class="language-dropdown">
           <select id="language-selector-movil" class="medium-text">
-            <option value="es_419">🌐ES</option>
             <option value="en_US">🌐EN</option>
+            <option value="es_419">🌐ES</option>
           </select>
         </div>
       </div>
       <div class="hamburger">&#9776;</div>
       <nav>
         <ul class="hamburger-list">
-          <li><a href="#questions" id="doubts">¿Dudas?</a></li>
-          <li><a href="#our-team" id="we">Nosotros</a></li>
+          <li><a href="#questions" id="doubts">Doubts?</a></li>
+          <li><a href="#our-team" id="we">About Us</a></li>
           <li><a href="#FAQ">FAQ</a></li>
         </ul>
-        <button id="extraButton" class="download-button large-text bold">
-          Descargar
+        <button id="extraButton" class="download-button large-text bold" onclick="window.location.href='https://chapatubus.netlify.app/'">
+          Start
         </button>
       </nav>
     </div>
@@ -111,10 +109,10 @@
         <div class="hero-content">
           <h2>ChapaTuBus</h2>
           <h4 class="color-white" id="hero_passenger_title">
-            Mejore su experiencia de viaje
+            Enhance your travel experience
           </h4>
-          <button id="heroButton-primary" class="download-button large-text">
-            Descargar
+          <button id="heroButton-primary" class="download-button large-text" onclick="window.location.href='https://chapatubus.netlify.app/'">
+            Start
           </button>
         </div>
       </section>
@@ -123,10 +121,10 @@
         <div class="hero-content">
           <h2>ChapaTuBus</h2>
           <h4 class="color-white" id="hero_business_title">
-            Gestione eficientemente su flota
+            Monitoring your fleet has never been so easy
           </h4>
-          <button id="heroButton-tertiary" class="download-button large-text">
-            Descargar
+          <button id="heroButton-tertiary" class="download-button large-text" onclick="window.location.href='https://chapatubus.netlify.app/'">
+            Start
           </button>
         </div>
       </section>
@@ -134,32 +132,28 @@
       <section id="featuresPassenger" class="features">
         <div class="section-title">
           <h2 class="color-primary" id="features_passenger_title">
-            Nosotros le ofrecemos
+            We offer you
           </h2>
         </div>
         <div class="feature-content">
           <div class="phones">
-            <img src="./assets/img/passenge-experience.png" alt="Experiencia de pasajero" />
+            <img src="./assets/img/passenge-experience.png" alt="Experiencia de pasajero" style="width: 500px;"/>
           </div>
           <ul class="feature-list">
             <li class="large-text color-gray-2" id="feature_passenger_li_1">
-              <i class="fas fa-check"></i> Información actualizada sobre las
-              líneas de transporte de tu ciudad.
+              <i class="fas fa-check"></i> Updated information about your city's transportation lines.
             </li>
             <li class="large-text color-gray-2" id="feature_passenger_li_2">
-              <i class="fas fa-check"></i> Observa el recorrido de los buses en
-              tiempo real.
+              <i class="fas fa-check"></i> Observe the bus route in time real.
             </li>
             <li class="large-text color-gray-2" id="feature_passenger_li_3">
-              <i class="fas fa-check"></i> Información en tiempo real del aforo
-              y tiempo de llegada del autobus que esperas.
+              <i class="fas fa-check"></i> Real-time information on the capacity and arrival time of the bus you are waiting for.
             </li>
             <li class="large-text color-gray-2" id="feature_passenger_li_4">
-              <i class="fas fa-check"></i> Recibe notificaciones personalizadas
-              de tus líneas de transporte favoritas.
+              <i class="fas fa-check"></i> Receive personalized notifications from your favorite transportation lines.
             </li>
             <button id="heroButton-primary" class="download-button large-text">
-              ¡Pruébelo!
+              Test it!
             </button>
           </ul>
         </div>
@@ -168,7 +162,7 @@
       <section id="featuresBusiness" class="features">
         <div class="section-title">
           <h2 class="color-primary" id="feature_business_title">
-            Gestione a tiempo real su flota
+            Manage your fleet in real time
           </h2>
         </div>
         <div class="cards-container">
@@ -178,7 +172,7 @@
               alt="Descripción de la imagen"
             />
             <div class="card-content">
-              <h6 id="feature_business_card_1_title">Rastrea tus buses</h6>
+              <h6 id="feature_business_card_1_title">Track your buses</h6>
               <p
                 class="large-text color-gray-5"
                 id="feature_business_card_1_description"
@@ -194,7 +188,7 @@
               alt="Descripción de la imagen"
             />
             <div class="card-content">
-              <h6 id="feature_business_card_2_title">Monitorea tus buses</h6>
+              <h6 id="feature_business_card_2_title">Monitor your buses</h6>
               <p
                 class="large-text color-gray-5"
                 id="feature_business_card_2_description"
@@ -211,7 +205,7 @@
             />
             <div class="card-content">
               <h6 id="feature_business_card_3_title">
-                Visualiza tu información
+                View your information
               </h6>
               <p
                 class="large-text color-gray-5"
@@ -227,15 +221,14 @@
       </section>
 
       <section id="videoPassenger" class="video">
-        <h2 id="video_title_a">¿Cómo funciona?</h2>
-        <br />
-        <h2 id="video_title_b">¡Échele un vistazo!</h2>
+        <p id="video_title_a">How does it work? </p>
+        <p id="video_title_b">Take a look!</p>
         <div class="content">
           <div class="video-container">
             <iframe
               width="315"
               height="560"
-              src="https://www.youtube.com/watch?v=9bq8uaVewW0"
+              src="https://www.youtube.com/embed/9bq8uaVewW0"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -244,18 +237,18 @@
           </div>
           <div class="info">
             <p class="bold large-text" id="video_passenger_subtitle">
-              Consigue nuestra app
+              Find our app on your favorite platforms
             </p>
             <p class="medium-text" id="video_passenger_description">
-              ¡Descarga la aplicación para una mejor experiencia!
+              Available for Android and iOS
             </p>
             <div class="buttons">
-              <a href="link_ios" target="_blank"
-                ><img src="./assets/img/apple_store_icon.png" alt="App Store"
+              <a href="https://www.apple.com/la/app-store/" target="_blank"
+                ><img src="./assets/img/app-store.png" alt="App Store"
               /></a>
-              <a href="link_play_store" target="_blank"
+              <a href="https://play.google.com/store/games?hl=es_PE&gl=US&pli=1" target="_blank"
                 ><img
-                  src="./assets/img/play_store_icon.png"
+                  src="./assets/img/google-play.png"
                   alt="Google Play Store"
               /></a>
             </div>
@@ -264,15 +257,14 @@
       </section>
 
       <section id="videoBusiness" class="video">
-        <h2 id="video_title_a">¿Cómo funciona?</h2>
-        <br />
-        <h2 id="video_title_b">¡Échele un vistazo!</h2>
+        <h2 id="video_title_a">How does it work? </h2>
+        <h2 id="video_title_b">Take a look!</h2>
         <div class="content">
           <div class="video-container">
             <iframe
               width="800"
               height="425"
-              src="https://www.youtube.com/watch?v=_1GylHe_t84"
+              src="https://www.youtube.com/embed/_1GylHe_t84"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -283,16 +275,14 @@
       </section>
 
       <section id="questions">
-        <h2 id="questions_title_a">¿Tienes preguntas?</h2>
+        <h2 id="questions_title_a">Do you have questions? </h2>
         <br />
-        <h2 id="questions_title_b">¡Estamos aquí para ayudarte!</h2>
+        <h2 id="questions_title_b">We are here to help you!</h2>
         <p class="color-gray-3" id="questions_description">
-          Antes de todo, le invitamos a revisar nuestras preguntas frecuentes
-          (FAQ) por si su duda esta resuelta. Si no, por favor, no dude en
-          ponerte en contacto con nosotros.
+          First of all, we invite you to review our frequently asked questions (FAQ) in case your question is resolved. If not, please do not hesitate to contact us.
         </p>
         <form>
-          <label for="name" id="questions_name">Nombre completo:</label><br />
+          <label for="name" id="questions_name">Full name</label><br />
           <span id="nameError" class="error-message"></span>
           <input
             type="text"
@@ -301,16 +291,16 @@
             maxlength="30"
             required
           /><br />
-          <label for="email" id="questions_email">Correo:</label><br />
+          <label for="email" id="questions_email">Mail</label><br />
           <span id="emailError" class="error-message"></span>
           <input type="email" id="email" name="email" maxlength="50" required />
           <br />
-          <label for="category">Categoría:</label><br />
+          <label for="category">Category</label><br />
           <select id="category" name="category" style="font-family: Urbanist">
-            <option value="passenger" selected id="passenger">Pasajero</option>
-            <option value="business" id="company">Empresa</option></select
+            <option value="passenger" selected id="passenger">Passenger</option>
+            <option value="business" id="company">Company</option></select
           ><br />
-          <label for="message" id="questions_message">Mensaje:</label><br />
+          <label for="message" id="questions_message">Message/label><br />
           <textarea
             id="message"
             name="message"
@@ -320,14 +310,14 @@
           ><br />
           <span id="messageError" class="error-message"></span><br />
           <button type="button" onclick="sendMailProcess()" id="questions_send">
-            Enviar
+           Send
           </button>
         </form>
       </section>
 
       <section id="our-team">
         <div class="title-section">
-          <h2 id="we_title">Conozca a nuestro equipo</h2>
+          <h2 id="we_title">Out team</h2>
         </div>
 
         <div class="team-cards">
@@ -335,10 +325,7 @@
             <div class="member-card">
               <div class="member-info">
                 <p id="we_member_1_info">
-                  Considero que poseo buenas habilidades cognitivas adecuadas
-                  para la programación. Soy una persona resiliente, además de
-                  comprometida y responsable con los proyectos en los que me
-                  involucro.
+                  I consider that I have good cognitive skills suitable for programming. I am a resilient person, as well as committed and responsible with the projects in which I get involved.
                 </p>
               </div>
               <div class="member-details">
@@ -358,10 +345,7 @@
             <div class="member-card">
               <div class="member-info">
                 <p id="we_member_2_info">
-                  Mi motivación radica en enfrentar desafíos que requieran
-                  soluciones creativas e innovadoras. A lo largo de mi carrera,
-                  he demostrado ser proactiva y colaborativa, comprometida con
-                  el éxito de cada proyecto.
+                  My motivation lies in facing challenges that require creative and innovative solutions. Throughout my career, I have proven to be proactive and collaborative, committed to the success of each project.
                 </p>
               </div>
               <div class="member-details">
@@ -383,10 +367,7 @@
             <div class="member-card">
               <div class="member-info">
                 <p id="we_member_3_info">
-                  Mi enfoque en el área de desarrollo es más que todo de
-                  Backend. Me gusta aprender nuevas tecnologías y desarrollar
-                  mis habilidades en conjunto con los que me rodean. Me gusta
-                  mucho escuchar música y tocar la guitarra.
+                  My focus in the development area is mostly Backend. I like to learn new technologies and develop my skills together with those around me. I really like listening to music and playing the guitar.
                 </p>
               </div>
               <div class="member-details">
@@ -406,10 +387,7 @@
             <div class="member-card">
               <div class="member-info">
                 <p id="we_member_4_info">
-                  Durante el desarrollo de mi carreara he enfrentado diversas
-                  situaciones en los trabajos lo cual ha mejorado mi resilencia
-                  y capacidad de trabajo colaborativo. Soy consciente de que el
-                  mundo nunca se detiene.
+                  During the development of my career I have faced various situations at work which has improved my resilience and capacity for collaborative work. I am aware that the world never stops.
                 </p>
               </div>
               <div class="member-details">
@@ -431,10 +409,7 @@
             <div class="member-card single">
               <div class="member-info">
                 <p id="we_member_5_info">
-                  Mi nombre es Rafael Primo Estrada y estudio la carrera de
-                  Ingeniería de Software, poseo un alto interés por el
-                  desarrollo móvil. Mis principales hobbies son los videojuegos
-                  y conocer nuevas tecnologías.
+                  My focus in the development area is mostly Backend. I like to learn new technologies and develop my skills together with those around me. I really like listening to music and playing the guitar.
                 </p>
               </div>
               <div class="member-details">
@@ -461,37 +436,36 @@
             <img src="./assets/img/bus-faq.jpg" alt="Parada de bus" />
           </div>
           <div class="right-column">
-            <h2 id="FAQ_title">Preguntas frecuentes</h2>
+            <h2 id="FAQ_title">Frequent questions</h2>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(1)" id="header1">
-                <p id="FAQ_question_1">¿La información es en tiempo real?</p>
+                <p id="FAQ_question_1">Is the information in real time?</p>
                 <span id="icon1">+</span>
               </div>
               <div class="card-content-FAQ" id="content1">
                 <p id="FAQ_answer_1">
-                  Sí. Debido a que utilizamos tecnologías IOT brindamos
-                  información precisa y actualizada a nuestros usuarios.
+                  Yes. Because we use IOT technologies we provide accurate and up-to-date information to our users.
                 </p>
               </div>
             </div>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(2)" id="header2">
-                <p id="FAQ_question_2">¿Cuáles son los planes de pago?</p>
+                <p id="FAQ_question_2">What are the payment plans?</p>
                 <span id="icon2">+</span>
               </div>
               <div class="card-content-FAQ" id="content2">
-                <p>Content for card 2</p>
+                <p>We have a premium plan that allows you to unlock all the features of the application</p>
               </div>
             </div>
             <div class="card-FAQ">
               <div class="card-header" onclick="toggleCard(3)" id="header3">
                 <p id="FAQ_question_3">
-                  ¿Qué información sobre mi flota me brinda?
+                  Will I find all the transportation lines?
                 </p>
                 <span id="icon3">+</span>
               </div>
               <div class="card-content-FAQ" id="content3">
-                <p>Content for card 3</p>
+                <p>You will find all the formal transport lines in your city</p>
               </div>
             </div>
           </div>
@@ -513,10 +487,10 @@
       <div class="center-section">
         <div class="footer-links small-text">
           <ul>
-            <li><a href="#" id="privacy_policy">Políticas de privacidad</a></li>
-            <li><a href="#" id="cookie_policy">Políticas de cookies</a></li>
+            <li><a href="#" id="privacy_policy">Privacy policies</a></li>
+            <li><a href="#" id="cookie_policy">Cookie policies</a></li>
             <li>
-              <a href="#" id="terms_conditions">Términos y condiciones</a>
+              <a href="#" id="terms_conditions">Terms and Conditions</a>
             </li>
             <li><a href="#">Legal</a></li>
           </ul>
@@ -525,7 +499,7 @@
       <div class="right-section">
         <div class="connect-with-us">
           <p class="bold large-text" id="connect_with_us">
-            Conecta con nosotros
+            Connect with us
           </p>
           <div class="social-icons">
             <a href="#"
