@@ -397,43 +397,17 @@ input:checked + .slider:before {
   margin-bottom: 20px;
 }
 
-.phones {
-  display: flex;
-  justify-content: space-between;
-  width: 45%;
-  position: relative;
-  min-height: 300px;
-}
+#feature_passenger_li_1, #feature_passenger_li_2, #feature_passenger_li_3, #feature_passenger_li_4{
+  font-size: 24px;
+} 
 
-.phone {
-  width: 30%;
-  height: 100%;
-  position: absolute;
-  object-fit: contain;
-}
-
-.phone-left {
-  left: 10%; /* Posiciona la imagen izquierda al inicio */
-  z-index: 1; /* Establece el índice z para que esté detrás de la imagen central */
-}
-
-.phone-center {
-  left: 35%; /* Posiciona la imagen central un poco a la derecha */
-  top: 30%;
-  z-index: 2; /* Establece el índice z para que esté encima de las otras imágenes */
-}
-
-.phone-right {
-  right: 10%; /* Posiciona la imagen derecha al final */
-  z-index: 1; /* Establece el índice z para que esté detrás de la imagen central */
-}
 .feature-list {
   width: 45%;
   list-style: none;
 }
 
 .feature-list li {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .feature-list li::before {
@@ -446,6 +420,24 @@ input:checked + .slider:before {
   flex-direction: column;
   height: 100%;
 } */
+
+@media (max-width: 800px) {
+  #feature_passenger_li_1, #feature_passenger_li_2, #feature_passenger_li_3, #feature_passenger_li_4{
+    font-size: 15px;
+  } 
+  .feature-content .left-column img{
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-content .left-column{
+    display: none;
+  }
+  .feature-content .ul{
+    display: none;
+  }
+}
 
 .section-title {
   height: 20%;
@@ -533,6 +525,21 @@ input:checked + .slider:before {
 .video .info {
   flex: 1;
   padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  #videoBusiness .video-container {
+   width: 400px;
+  }
+  #videoPassenger .video-container {
+    width: 200px;
+   }
+   #videoPassenger .info{
+    display: none;
+   }
+   #FAQ .container .left-column{
+    display: none;
+  }
 }
 
 .video .info p {
@@ -649,6 +656,10 @@ input:checked + .slider:before {
   .member-image img {
     width: 80px;
     height: 80px;
+  }
+
+  .feature-list{
+    font-size: small;
   }
 }
 
@@ -772,6 +783,13 @@ footer {
 }
 .container {
   display: flex;
+}
+
+#questions_send{
+  background-color: var(--color-tertiary);
+  margin-bottom: 50px;
+  font-family: "Urbanist", sans-serif;
+  padding: 0.5rem 1rem;
 }
 
 /*---------------- FOOTER ---------------------- */
