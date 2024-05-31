@@ -312,52 +312,85 @@
         </div>
       </section>
 
-      <section class="pricing-section">
-        <h1>Choose the plan that fits for your team</h1>
-        <p>
-          Deploy your sites to global infrastructure in seconds. No credit card
-          required
+      <section class="pricing-section" id="pricing-section-company">
+        <h1 id="pricing-company-title">Choose the plan that fits for your team</h1>
+        <p id="pricing-company-subtitle">
+          Manage your fleet in real time. All in one app.
         </p>
-
         <div class="pricing">
           <div class="plan">
-            <h2>Basic</h2>
-            <div class="price">FREE</div>
+            <h2 id="plan-basic">Basic</h2>
+            <div class="price" id="plan-basic-price">$10/month</div>
             <ul class="features-price">
-              <li><i class="fas fa-check-circle"></i> Unlimited Websites</li>
-              <li><i class="fas fa-check-circle"></i> 1 User</li>
-              <li><i class="fas fa-check-circle"></i> 100MB Space/website</li>
-              <li><i class="fas fa-check-circle"></i> Continuous deployment</li>
-              <li><i class="fas fa-times-circle"></i> No priority support</li>
+              <li id="basic-functionalities"><i class="fas fa-check-circle"></i> Basic functionalities</li>
+              <li id="weekly-statistics"><i class="fas fa-check-circle"></i> Weekly statistics</li>
+              <li id="1-user"><i class="fas fa-check-circle"></i> 1 user</li>
+              <li id="limited-fleet-registration"><i class="fas fa-times-circle"></i> Limited fleet registration</li>
+              <li id="no-priority-support"><i class="fas fa-times-circle"></i> No priority support</li>
             </ul>
-            <button>Start now!</button>
+            <button onclick="window.location.href='https://chapatubus.netlify.app/'" id="pricing-button">Start now!</button>
+          </div>
+          <div class="plan popular">
+            <span id="plan-most-popular">Most Popular</span>
+            <h2 id="plan-pro">Pro</h2>
+            <div class="price" id="plan-pro-price">$60/month</div>
+            <ul class="features-price">
+              <li id="complete-functionalities"><i class="fas fa-check-circle"></i> Complete functionalities</li>
+              <li id="annual-statistics"><i class="fas fa-check-circle"></i> Annual statistics</li>
+              <li id="5-users"><i class="fas fa-check-circle"></i> 5 users</li>
+              <li id="unlimited-fleet-registration"><i class="fas fa-check-circle"></i> Unlimited fleet registration</li>
+              <li id="email-support"><i class="fas fa-check-circle"></i> Email Support</li>
+            </ul>
+            <button onclick="window.location.href='https://chapatubus.netlify.app/'" id="pricing-button">Start now!</button>
+          </div>
+          <div class="plan">
+            <h2 id="plan-enterprice">Enterprise</h2>
+            <div class="price" id="plan-enterprice-price">Custom Pricing</div>
+            <ul class="features-price">
+              <li id="complete-functionalities"><i class="fas fa-check-circle"></i> Complete functionalities</li>
+              <li id="annual-statistics"><i class="fas fa-check-circle"></i> Annual statistics</li>
+              <li id="unlimited-users">
+                <i class="fas fa-check-circle"></i> Unlimited users
+              </li>
+              <li id="unlimited-fleet-registration"><i class="fas fa-check-circle"></i> Unlimited fleet registration</li>
+              <li id="24-7-email-support"><i class="fas fa-check-circle"></i> 24/7 Email support</li>
+            </ul>
+            <button onclick="window.location.href='https://chapatubus.netlify.app/'" id="pricing-button">Start now!</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing-section-passenger">
+        <h1 id="pricing-passenger-title">Choose the plan that fits you</h1>
+        <p id="pricing-passenger-subtitle">
+          Enjoy all your new benefits for a first-class trip
+        </p>
+ß
+        <div class="pricing">
+          <div class="plan">
+            <h2 id="plan-basic">Basic</h2>
+            <div class="plan-basic-price" id="plan-basic-passenger-price">FREE</div>
+            <ul class="features-price">
+              <li id="trip-planner"><i class="fas fa-check-circle"></i> Trip planner</li>
+              <li id="line-schedule"><i class="fas fa-check-circle"></i> Line schedule</li>
+              <li id="time-location"><i class="fas fa-check-circle"></i> Real time location</li>
+              <li id="next-arrival"><i class="fas fa-check-circle"></i> Real time of 1 next arrival</li>
+              <li id="ads"><i class="fas fa-times-circle"></i> Ads</li>
+            </ul>
+            <button onclick="window.location.href='https://play.google.com/store/games?hl=es_PE&gl=US'" id="pricing-button">Start now!</button>
           </div>
           <div class="plan popular">
             <span>Most Popular</span>
-            <h2>Pro</h2>
-            <div class="price">$10/month</div>
+            <h2 id="plan-pro">Pro</h2>
+            <div class="price" id="plan-pro-passenger-price">$5/month</div>
             <ul class="features-price">
-              <li><i class="fas fa-check-circle"></i> Unlimited Websites</li>
-              <li><i class="fas fa-check-circle"></i> 5 Users</li>
-              <li><i class="fas fa-check-circle"></i> 512MB Space/website</li>
-              <li><i class="fas fa-check-circle"></i> Continuous deployment</li>
-              <li><i class="fas fa-check-circle"></i> Email Support</li>
+              <li id="next-arrivals"><i class="fas fa-check-circle"></i> Real time of next arrivals</li>
+              <li id="arrival-updates"><i class="fas fa-check-circle"></i> Live arrival updates</li>
+              <li id="time-location"><i class="fas fa-check-circle"></i> Real time location</li>
+              <li id="route-progress"><i class="fas fa-check-circle"></i> Share route progress</li>
+              <li id="ad-free"><i class="fas fa-check-circle"></i> Ad free</li>
             </ul>
-            <button>Start now!</button>
-          </div>
-          <div class="plan">
-            <h2>Enterprise</h2>
-            <div class="price">Custom Pricing</div>
-            <ul class="features-price">
-              <li><i class="fas fa-check-circle"></i> Unlimited Websites</li>
-              <li><i class="fas fa-check-circle"></i> Unlimited Users</li>
-              <li>
-                <i class="fas fa-check-circle"></i> Unlimited Space/website
-              </li>
-              <li><i class="fas fa-check-circle"></i> Continuous deployment</li>
-              <li><i class="fas fa-check-circle"></i> 24/7 Email support</li>
-            </ul>
-            <button>Start now!</button>
+            <button onclick="window.location.href='https://play.google.com/store/games?hl=es_PE&gl=US'" id="pricing-button">Start now!</button>
           </div>
         </div>
       </section>
