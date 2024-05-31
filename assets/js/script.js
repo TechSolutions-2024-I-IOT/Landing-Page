@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const switchButton = document.getElementById("switchButton");
   const switchButtonMovil = document.getElementById("switchButton-movil");
   const sections = {
-    passenger: ["heroPassenger", "featuresPassenger", "videoPassenger"],
-    business: ["heroBusiness", "featuresBusiness", "videoBusiness"],
+    passenger: ["heroPassenger", "featuresPassenger", "videoPassenger", "pricing-section-passenger"],
+    business: ["heroBusiness", "featuresBusiness", "videoBusiness", "pricing-section-company"],
   };
   const colors = {
     primary: "#556bda",
